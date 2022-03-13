@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
 return (
   <section className="bg-gray-50">
@@ -13,12 +15,12 @@ return (
           Mini todo list application to help you manage your tasks.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
-          <a href="/todo" className="block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 rounded shadow sm:w-auto active:bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring">
+          <Link href="/todo" className="block w-full px-12 py-3 text-sm font-medium text-white bg-blue-600 rounded shadow sm:w-auto active:bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring">
             Get Started
-          </a>
-          <a className="block w-full px-12 py-3 text-sm font-medium text-blue-600 rounded shadow sm:w-auto hover:text-blue-700 active:text-blue-500 focus:outline-none focus:ring" href="/about">
+          </Link>
+          <Link className="block w-full px-12 py-3 text-sm font-medium text-blue-600 rounded shadow sm:w-auto hover:text-blue-700 active:text-blue-500 focus:outline-none focus:ring" href="/about">
             Learn More
-          </a>
+          </Link>
         </div>
       </div>
     </div>
