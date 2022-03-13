@@ -11,7 +11,7 @@ function Todo() {
     const [todos, setTodos] = React.useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3000/api/get')
+        axios.get('/api/get')
         .then(res => {
             setTodos(res.data);
         })
